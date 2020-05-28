@@ -1,6 +1,8 @@
 package com.example.eksamens.velser.Controller;
 
+import com.example.eksamens.velser.Service.User;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
@@ -32,7 +34,13 @@ public class MainController {
     }
 
     @GetMapping("/Thymeleaf")
-    public String Thymeleaf() {
+    public String Thymeleaf(Model model) {
+        User user = new User("Patrick Jønsson", "Student at KEA", "Intellij is a great tool that helps me to developer better code and autocompletes the code i cant remember how to write");
+        model.addAttribute(user);
+
+        User user2 = new User("Tilde Johansen", "Freelancer",  "intellij is a great tool but dosn't allow for custom user features");
+        model.addAttribute("tilde" , user2);
+
         return "thymeleaf";
     }
 
