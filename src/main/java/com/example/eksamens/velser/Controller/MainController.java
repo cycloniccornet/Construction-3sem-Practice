@@ -31,5 +31,14 @@ public class MainController {
         return "html5formv";
     }
 
+    @GetMapping("/Thymeleaf")
+    public String Thymeleaf() {
+        return "thymeleaf";
+    }
+
+    @GetMapping("/Http")
+    public String Http() {
+        return "http";
+    }
 
 }
