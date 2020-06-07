@@ -1,6 +1,6 @@
 package com.example.eksamens.velser.Controller;
 
-import com.example.eksamens.velser.Service.User;
+import com.example.eksamens.velser.Service.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,6 +16,11 @@ public class MainController {
     @GetMapping("/javascript")
     public String Javascript() {
         return "javascript";
+    }
+
+    @GetMapping("/javascript/product")
+    public String javascriptProduct(){
+        return "javascriptproduct";
     }
 
     @GetMapping("/Ajax")
