@@ -15,13 +15,13 @@
         <button onclick="document.getElementById('innerHTML').innerHTML = 'This is inner HTML' ">What is inner HTML?</button>
         <p id="innerHTML"></p>
     </div>
-
+    <br>
     <div class="container">
         <!-- samme som ovenstående men fra function"-->
         <p id="innerHTMLFunction">What is this example?</p>
         <button onclick="functionExample()">Find out!</button>
     </div>
-
+    <br>
     <div class="container">
         <input type="number" id="elementA" placeholder="Ex. 5">
         <input type="number" id="elementB" placeholder="Ex. 7">
@@ -29,14 +29,16 @@
         <button onclick="addision()">Get sum of a and b</button>
         <div id="result-box"></div>
     </div>
-
+    <br>
     <div class="container">
         <button onclick="suprice()">Click me to reveal a secret!</button>
         <p id="hiddenmsg" style="display:none">Jeg spiser koldskål som aftensmad</p>
     </div>
+
+    <a class="link" th:href="@{/javascript/product}" >Praktiserende brug af javascript</a>
 </div>
 
-<a class="link" th:href="@{/javascript/product}" >Praktiserende brug af javascript</a>
+
 
 <script>
     
