@@ -18,6 +18,8 @@ body{
 }
 
 .accordion{
+    background-color:#3cce3380;
+    border-radius:25px;
     max-width: 600px;
     padding: 20px;
 }
