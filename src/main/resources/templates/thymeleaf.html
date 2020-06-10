@@ -6,7 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <script src="http://use.fontawesome.com/d1341f9b7a.js"></script>
-    <link href="/css/thymeleaf.css" rel="stylesheet" type="text/css"/>
+   <!-- <link href="/css/thymeleaf.css" rel="stylesheet" type="text/css"/> -->
+    <link th:href="@{/css/thymeleaf.css}" rel="stylesheet" type="text/css"/>
     <title>Thymeleaf</title>
 </head>
 <body>
@@ -15,7 +16,6 @@
     <div class="box">
         <img class="box-img" src="img/Studiefoto.PNG" alt="" >
         <h1 th:text="${user.firstnameAndLastname}"></h1>
-
         <h5 th:text="${user.role}">Indsæt tag?</h5>
         <p th:text="${user.comment}"></p>
     </div>
@@ -27,6 +27,7 @@
         <p th:text="${tilde.comment}"></p>
     </div>
 
+    <a th:href="@{'/'}"> Go back</a>
 </div>
 </body>
 </html>

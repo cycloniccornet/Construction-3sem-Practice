@@ -56,7 +56,7 @@
     /* $(selector).action() */
     $(".item-header").click(function(){
         $(".accordion-item").removeClass("active"); // Fjerner active fra nuværende klasse
-        $(this).parent().addClass("active"); //this refererer til den klasse der trykkes på.  parent() methoden returnere den direkte parent for den balgte klasse, altså class="accordion-item" og tilføjer active
+        $(this).parent().addClass("active"); //this refererer til den klasse der trykkes på.  parent() methoden returnere den direkte parent for den valgte klasse, altså class="accordion-item" og tilføjer active
         $(".icon").text("+"); //text() methoden sætter eller retunerer text fældet af det valgte element. I dette tilfælde den nuværende aktive klasse
         $(this).children(".icon").text("-"); //children() refererer til children klassen af parent, altså class = item-header.
     });
