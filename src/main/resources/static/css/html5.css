@@ -1,121 +1,69 @@
 /*
-Denne CSS template er lavet ud frahttps://www.youtube.com/watch?v=HRsqxLEhc34&list=PLbBR9SQXCBacNTX36Eo8I217CNflO5kXQ&index=13&t=0s
+Denne CSS template er lavet ud fra https://www.youtube.com/watch?v=opbtRRSHGnk&t=440s
  */
 
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Open Sans",sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
 }
 
 body{
-  min-height: 100vh;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    background: url("../img/mountain.jpg") no-repeat center;
 }
 
-.contact-page{
-  width: 100%;
-  max-width: 1400px;
-  padding: 50px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
+.contact-section{
+    background: url("../img/mountain.jpg") no-repeat center;
+    background-size: cover;
+    padding: 40px 0;
 }
-
-h2{
-  width: 100%;
-  margin-bottom: 80px;
-  text-transform: uppercase;
-  color: #322;
-  font-size: 60px;
+.contact-section h1{
+    text-align: center;
+    color: #ddd;
 }
-
-.contact-info, .contact-form{
-  flex: 1;
-}
-
-.item{
-  margin-bottom: 24px;
-  font-size: 16px;
-  color: #322;
-}
-
-.icon{
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  background-color: #3494db;
-  text-align: center;
-  color: #fff;
-  border-radius: 50%;
-  margin-right: 16px;
+.border{
+    width: 100px;
+    height: 10px;
+    background: #34495e;
+    margin: 40px auto;
 }
 
 .contact-form{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
 }
 
-.textb{
-  width: calc(50% - 10px);
-  height: 50px;
-  padding: 12px;
-  background-color: #222;
-  border: none;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-textarea{
-  width: 100%;
-  min-height: 200px;
-  max-height: 400px;
-  resize: vertical;
-  padding: 12px;
-  background-color: #222;
-  border: none;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-.btn{
-  width: 120px;
-  height: 40px;
-  margin-left: auto;
-  background-color: #3494db;
-  border: none;
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: 2px solid #3494db;
-  transition: .3s linear;
-}
-
-.btn:hover{
-  background-color: transparent;
-  color: #3494db;
-}
-
-@media screen and (max-width: 980px){
-  .contact-page{
-    max-width: 800px;
-  }
-  h2{
-    font-size: 40px;
-    margin-bottom: 40px;
-  }
-
-  .contact-info, .contact-form{
-    flex: 100%;
-    margin-bottom: 30px;
-  }
-  .textb{
+.contact-form-text{
+    display: block;
     width: 100%;
-  }
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+}
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #34495e;
+}
+textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+}
+.contact-form-btn{
+    float: right;
+    border: 0;
+    background: #34495e;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contact-form-btn:hover{
+    background: #2980b9;
 }
